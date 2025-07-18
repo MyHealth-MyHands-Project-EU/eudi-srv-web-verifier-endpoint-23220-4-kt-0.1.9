@@ -1,0 +1,46 @@
+[versions]
+coroutines = "1.9.0"
+kotlin = "2.0.21"
+foojay = "0.8.0"
+springboot = "3.4.0"
+springDependencyManagement = "1.1.6"
+spotless = "6.25.0"
+java = "17"
+kotlinxSerialization = "1.7.3"
+oauth2OidcSdk = "11.20.1"
+presentationExchange = "0.3.0"
+ktlintVersion = "0.50.0"
+bouncyCastle = "1.79"
+arrow = "1.2.4"
+sonarqube = "6.0.0.5145"
+dependencycheck = "11.1.0"
+jacoco = "0.8.11"
+swaggerUi = "5.18.2"
+waltid = "0.9.0"
+sdJwt = "0.10.0"
+ktor = "3.0.1"
+
+[libraries]
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+nimbusds-oauth2-oidc-sdk = { module = "com.nimbusds:oauth2-oidc-sdk", version.ref = "oauth2OidcSdk" }
+presentation-exchange = { module = "eu.europa.ec.eudi:eudi-lib-jvm-presentation-exchange-kt", version.ref = "presentationExchange" }
+bouncy-castle = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncyCastle" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+swagger-ui = { module = "org.webjars:swagger-ui", version.ref = "swaggerUi" }
+waltid-mdoc-credentials = { module = "id.walt.mdoc-credentials:waltid-mdoc-credentials-jvm", version.ref = "waltid" }
+sd-jwt = { module = "eu.europa.ec.eudi:eudi-lib-jvm-sdjwt-kt", version.ref = "sdJwt" }
+ktor-client-java = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
+
+[plugins]
+foojay-resolver-convention = { id = "org.gradle.toolchains.foojay-resolver-convention", version.ref = "foojay" }
+spring-boot = { id = "org.springframework.boot", version.ref = "springboot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+dependencycheck = { id = "org.owasp.dependencycheck", version.ref = "dependencycheck" }
+sonarqube = { id = "org.sonarqube", version.ref = "sonarqube" }
+
